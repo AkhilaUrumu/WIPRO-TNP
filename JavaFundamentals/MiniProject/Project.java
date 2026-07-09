@@ -2,16 +2,12 @@ package JavaFundamentals.MiniProject;
 
 public class Project{
     public static void main(String[]args){
-
         if(args.length==0){
             System.out.println("Please enter Employee Id");
             return;
         }
-
         int empNo[]={1001,1002,1003,1004,1005,1006,1007};
-
         String empName[]={"Ashish","Sushma","Rahul","Chahat","Ranjan","Suman","Tanmay"};
-
         String joinDate[]={"01/04/2009","23/08/2012","12/11/2008","29/01/2013","16/07/2005","01/01/2000","12/06/2006"};
 
         char desigCode[]={'e','c','k','r','m','e','c'};
@@ -34,41 +30,33 @@ public class Project{
                 break;
             }
         }
-
         if(index==-1){
             System.out.println("There is no employee with empid : "+empId);
             return;
         }
-
         String designation="";
         int da=0;
-
         switch(desigCode[index]){
             case 'e':
                 designation="Engineer";
                 da=20000;
                 break;
-
             case 'c':
                 designation="Consultant";
                 da=32000;
                 break;
-
             case 'k':
                 designation="Clerk";
                 da=12000;
                 break;
-
             case 'r':
                 designation="Receptionist";
                 da=15000;
                 break;
-
             case 'm':
                 designation="Manager";
                 da=40000;
                 break;
-
             default:
                 designation="Unknown";
                 da=0;
