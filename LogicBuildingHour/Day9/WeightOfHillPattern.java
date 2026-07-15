@@ -8,15 +8,23 @@ public class WeightOfHillPattern {
 
         Scanner sc=new Scanner(System.in);
 
-        System.out.print("Enter height:");
-        int n=sc.nextInt();
+        System.out.print("Enter number of rows:");
+        int rows=sc.nextInt();
 
         int weight=0;
 
-        for(int i=1;i<=n;i++) {
-            weight=weight+i*i;
+        for(int i=1;i<=rows;i++){
+
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+                weight++;
+            }
+
+            System.out.println();
         }
 
-        System.out.println("Weight="+weight);
+        System.out.println("Weight of Hill Pattern = "+weight);
+
+        sc.close();
     }
 }

@@ -11,6 +11,7 @@ public class CaseConvert {
             System.out.println(ch + " -> " + Character.toLowerCase(ch));
         }else{
             System.out.println("Invalid Input");
+            sc.close();
         }
     }
 }

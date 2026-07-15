@@ -20,5 +20,7 @@ public class CreatePIN {
         int pin=(alpha*beta)+gamma;
 
         System.out.println("PIN="+pin);
+
+        sc.close();
     }
 }

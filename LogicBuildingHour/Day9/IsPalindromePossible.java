@@ -11,28 +11,29 @@ public class IsPalindromePossible {
         System.out.print("Enter number:");
         int num=sc.nextInt();
 
-        int temp=num;
         int count[]=new int[10];
 
-        while(temp>0) {
-            int digit=temp%10;
+        while(num>0){
+            int digit=num%10;
             count[digit]++;
-            temp=temp/10;
+            num=num/10;
         }
 
         int odd=0;
 
-        for(int i=0;i<10;i++) {
-            if(count[i]%2!=0) {
+        for(int i=0;i<10;i++){
+            if(count[i]%2!=0){
                 odd++;
             }
         }
 
-        if(odd<=1) {
+        if(odd<=1){
             System.out.println("Palindrome Possible");
         }
-        else {
+        else{
             System.out.println("Palindrome Not Possible");
         }
+
+        sc.close();
     }
 }

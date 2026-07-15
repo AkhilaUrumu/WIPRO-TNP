@@ -14,17 +14,19 @@ public class IsPalindromeNumber {
         int original=num;
         int reverse=0;
 
-        while(num>0) {
+        while(num>0){
             int digit=num%10;
             reverse=reverse*10+digit;
             num=num/10;
         }
 
-        if(original==reverse) {
+        if(original==reverse){
             System.out.println("Palindrome Number");
         }
-        else {
-            System.out.println("Not Palindrome Number");
+        else{
+            System.out.println("Not a Palindrome Number");
         }
+
+        sc.close();
     }
 }
